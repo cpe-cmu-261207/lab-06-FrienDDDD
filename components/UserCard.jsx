@@ -19,7 +19,7 @@ export default function Usercard(props) {
         <span className="text-center display-6 me-auto">{props.name}</span>
         {open ? <IconChevronDown /> : <IconChevronUp />}
       </div>
-      {open && <UserCardDetail email={props.email} address={props.address} />}
+      {!open && <UserCardDetail email={props.email} address={props.address} />}
     </div>
   );
 }
